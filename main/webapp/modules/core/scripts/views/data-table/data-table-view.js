@@ -721,6 +721,11 @@ DataTableView.prototype._createMenuForAllColumns = function(elmt) {
           id: "core/to-empty",
           label: $.i18n('core-views/blank-out-empty'),
           click: function() { new commonTransformDialog("\"\"","core-views/blank-out-empty/header" ); }
+        },
+        {
+          id: "core/add-suffix",
+          label: $.i18n('core-views/add-suffix'),
+          click: function() { new commonTransformDialog("value.addSuffix()","core-views/add-suffix/header" ); }
         }
       ]
     },
